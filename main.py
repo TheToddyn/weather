@@ -3,7 +3,7 @@ import requests
 
 def obter_informacoes_clima(cidade):
 
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid=6161ce7ee60e813d42d1a895a211b327"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={sua key}"
     response = requests.get(url)
     dados_clima = response.json()
 
